@@ -1,0 +1,6 @@
+# example .env for use with autoenv...
+# works for the Adafruit itsy bitsy ble board on MacOS
+# these vars let you just run make to compile and flash
+
+export FQBN='adafruit:nrf52:itsybitsy52840'
+export SERIAL_DEV=$(find /dev -type c -regex '/dev/tty\.usb.*' 2>/dev/null)
